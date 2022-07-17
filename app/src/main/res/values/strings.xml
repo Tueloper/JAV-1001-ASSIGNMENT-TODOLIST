@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Todolist App</string>
+    <string name="input_todo">Input Todo</string>
+    <string name="add">ADD</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="u">U</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/input_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp">
+
+        <EditText
+            android:id="@+id/todolist_input"
+            android:layout_width="276dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/app_name"
+            android:inputType="textPersonName"
+            android:labelFor="@string/input_todo"
+            android:textColorHint="#757575" />
+
+        <Button
+            android:id="@+id/add_todolist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:onClick="addTodolist"
+            android:text="@string/add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="614dp"
+        android:layout_above="@+id/input_selection"
+        android:layout_alignParentBottom="true">
+        <ListView
+            android:id="@+id/todo_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
